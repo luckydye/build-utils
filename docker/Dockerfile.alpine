@@ -1,0 +1,7 @@
+FROM alpine:latest
+
+RUN apk update && \
+  apk upgrade && \
+  apk add gcc make g++ zlib-dev && \
+  apk add build-base libgcc libc6-compat gcompat && \
+  apk add openssl git bash curl rtx
