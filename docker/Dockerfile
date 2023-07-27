@@ -5,6 +5,8 @@ RUN apt update -y && \
   apt install build-essential -y && \
   apt install git curl -y
 
-COPY scripts/install-rtx.sh /root/install-rtx.sh
+RUN curl https://rtx.pub/install.sh | RTX_INSTALL_PATH=/usr/local/bin/rtx sh &&\
+		chmod +x /usr/local/bin/rtx
 
-RUN chmod 700 /root/install-rtx.sh && bash /root/install-rtx.sh
+COPY ./scripts/install.sh /usr/local/bin/install.sh
+RUN chmod +x /usr/local/bin/install.sh

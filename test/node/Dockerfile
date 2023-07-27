@@ -1,4 +1,6 @@
 FROM luckydye/build-utils
 
-ENTRYPOINT ["tail", "-f", "/dev/null"]
-# CMD ["node", "-v"]
+COPY .rtx.toml ./
+RUN /usr/local/bin/install.sh
+
+CMD ["tail", "-f", "/dev/null"]
