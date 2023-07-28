@@ -1,9 +1,0 @@
-FROM alpine:latest
-
-RUN apk update && \
-  apk upgrade && \
-  apk add --no-cache curl make gcc g++ linux-headers binutils-gold gnupg libstdc++ && \
-  apk add --no-cache openssl git bash rtx
-
-COPY ./scripts/install.sh /usr/local/bin/install.sh
-RUN chmod +x /usr/local/bin/install.sh
