@@ -1,6 +1,4 @@
-FROM luckydye/build-utils
+FROM luckydye/build-utils:debian
 
 COPY .rtx.toml ./
-RUN /usr/local/bin/install.sh
-
-CMD ["tail", "-f", "/dev/null"]
+# RUN /setup.sh
