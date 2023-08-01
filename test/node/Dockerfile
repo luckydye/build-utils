@@ -1,4 +1,4 @@
-FROM luckydye/build-utils:debian
+FROM luckydye/build-utils:latest
 
 COPY .rtx.toml ./
-# RUN /setup.sh
+RUN rtx install
