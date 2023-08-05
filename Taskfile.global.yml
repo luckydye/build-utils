@@ -1,0 +1,11 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+
+  default:
+    desc: List all tasks with descriptions
+    silent: true
+    cmds:
+      - task --list

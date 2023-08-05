@@ -1,11 +1,29 @@
 # build-utils
 
-Uses [rtx](https://github.com/jdxcode/rtx) to install required build tools.
+Uses [rtx](https://github.com/jdxcode/rtx) to install required build tools and [task](https://github.com/go-task/task) as a task runner.
+
+
+## Local Setup Script
+
+`curl https://raw.githubusercontent.com/luckydye/build-utils/main/setup.sh | bash`
+
+This script will install and setup:
+- [rtx](https://github.com/jdxcode/rtx)
+- [task](https://github.com/go-task/task)
+
+*Alternatively* install task and rtx with brew using `brew install rtx task`
+
+### Supported platforms
+
+- linux/ubuntu
+- linux/alpine
+- osx
+
 
 ## Example Gitlab CI config
 
 ```yaml
-image: luckydye/buildapp
+image: luckydye/build-utils
 
 variables:
   RTX_DATA_DIR: $CI_PROJECT_DIR/.rtx
