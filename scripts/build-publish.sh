@@ -1,2 +1,2 @@
-docker buildx build ./docker/ubuntu -t luckydye/build-utils:ubuntu --push
-docker buildx build ./docker/ubuntu -t luckydye/build-utils:latest --push
+docker buildx build ./docker/debian -t luckydye/buildapp:debian --push
+docker buildx build ./docker/debian -t luckydye/buildapp:latest --push

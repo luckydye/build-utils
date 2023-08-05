@@ -1,4 +1,4 @@
-FROM luckydye/build-utils:latest
+FROM luckydye/buildapp:latest
 
 COPY .rtx.toml ./
 RUN rtx install
