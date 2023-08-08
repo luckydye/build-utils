@@ -17,7 +17,8 @@ This script will install and setup:
 
 - linux/ubuntu
 - linux/alpine
-- osx
+- osx/arm
+- osx/amd
 
 
 ## Example Gitlab CI config
