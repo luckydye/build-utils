@@ -26,8 +26,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
-          context: .
-          dockerfile: ./docker/debian/Dockerfile
-          platform: linux/amd64,linux/arm64
+          context: ./docker/debian
+          platforms: linux/amd64,linux/arm64
           push: true
           tags: luckydye/build-utils:latest
