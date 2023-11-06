@@ -10,6 +10,7 @@ Uses [rtx](https://github.com/jdxcode/rtx) to install required build tools and [
 This script will install and setup:
 - [rtx](https://github.com/jdxcode/rtx)
 - [task](https://github.com/go-task/task)
+- [jetp](https://www.jetporch.com/)
 
 *Alternatively* install task and rtx with brew using `brew install rtx task`
 
